@@ -1,0 +1,12 @@
+/* Gestion du contenu */
+.slide_inside {
+	width: 1330px;
+	font-family: Arial Narrow, sans-serif;
+	color: #524f4f;
+	font-size: 20px;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}

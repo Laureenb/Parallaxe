@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Test Parallaxe</title>
+</head>
+<body>
+	<!-- slide 1 -->
+	<div id="slide1" style="">
+		<div class="slide_inside">
+			<h1>Slide 1</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates eius ex at, rem eum doloribus quod quis atque minus, reiciendis explicabo natus ad, veniam suscipit numquam neque maxime quidem.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates eius ex at, rem eum doloribus quod quis atque minus, reiciendis explicabo natus ad, veniam suscipit numquam neque maxime quidem.</p>
+		</div>
+	</div>
+	<!-- slide 2 -->
+	<div id="slide2" style="">
+		<div class="slide_inside">
+			<h1>Slide 2</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur delectus a consequatur rerum soluta, esse consectetur maiores nihil. Veritatis accusamus voluptate exercitationem nihil obcaecati dignissimos, tempore ipsum nostrum! Magni, laboriosam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates eius ex at, rem eum doloribus quod quis atque minus, reiciendis explicabo natus ad, veniam suscipit numquam neque maxime quidem.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates eius ex at, rem eum doloribus quod quis atque minus, reiciendis explicabo natus ad, veniam suscipit numquam neque maxime quidem.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates eius ex at, rem eum doloribus quod quis atque minus, reiciendis explicabo natus ad, veniam suscipit numquam neque maxime quidem.</p>
+		</div>
+	</div>
+	<!-- slide 3 -->
+	<div id="slide3" style="">
+		<div class="slide_inside">
+			<h1>Slide 3</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur delectus a consequatur rerum soluta, esse consectetur maiores nihil. Veritatis accusamus voluptate exercitationem nihil obcaecati dignissimos, tempore ipsum nostrum! Magni, laboriosam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptates eius ex at, rem eum doloribus quod quis atque minus, reiciendis explicabo natus ad, veniam suscipit numquam neque maxime quidem.</p>
+		</div>
+	</div>
+<!--Javascript-->
+<!--va permettre d'importer Jquery-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js">
+</script>
+
+<!--va permettre d'importer le parallaxe-->
+<script type="text/javascript" src="jquery.parallax-1.1.js"></script>
+
+<script type="text/javascript">	
+	// va permettre d'attendre que les scripts soient chargés
+	$(document).ready(function(){
+
+		//va permettre de cibler les éléments dans la page
+		//$("élément").parallax(xPosition, adjuster, inertia, outerHeight);
+			
+	    // xPosition : Position horizontale de l'élément.
+	    // adjuster : La position verticale de départ (en pixels).
+	    // inertia : Vitesse en fonction du scroll. Exemple: 0.1 = 1/10 ème de la vitesse du scroll, 2 = deux fois la vitesse du scroll.
+	    // outerHeight : Détermine si jQuery utilise sa propre fonction outerHeight pour déterminer quand une partie est visible dans le viewport (true ou false).	
+	    $('#slide1').parallax("center", 0, 0.3, true);
+	    $('#slide2').parallax("center", 900, 0.1, true);
+	    $('#slide3').parallax("center", 2900, 0.1, true);
+	})
+</script>
+</body>
+</html>
